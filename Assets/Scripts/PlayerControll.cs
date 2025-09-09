@@ -4,7 +4,8 @@ public class SubmarineController : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 10f;
-    public float rotationSpeed = 100f;
+    public float rotationSpeed = 10f;
+    //public float rotationSpeed = 100f;
 
     [Header("Camera Settings")]
     public Transform cameraTransform;
@@ -18,13 +19,20 @@ public class SubmarineController : MonoBehaviour
 
     void HandleMovement()
     {
-        // Maju mundur (W/S)
-        float moveInput = Input.GetAxis("Vertical"); // W = 1, S = -1
-        transform.Translate(Vector3.forward * moveInput * moveSpeed * Time.deltaTime);
+        // Input WASD 
+        float moveX = Input.GetAxis("Horizontal"); 
+        float moveZ = Input.GetAxis("Vertical");
 
-        // Rotasi kiri/kanan (A/D)
-        float turnInput = Input.GetAxis("Horizontal"); // A = -1, D = 1
-        transform.Rotate(Vector3.up * turnInput * rotationSpeed * Time.deltaTime);
+        Vector3 move = new Vector3(moveX, 0, moveZ) * moveSpeed * Time.deltaTime;
+        if (move.magnitude > 0.01f)
+        {
+            // Gerakkan kapal
+            transform.Translate(move.normalized * moveSpeed * Time.deltaTime, Space.World);
+
+            // Rotasi menghadap arah gerakan
+            Quaternion targetRotation = Quaternion.LookRotation(move, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+        }
     }
 
     void HandleCameraFollow()

@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -208,34 +207,18 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274317140}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.17486966, y: 0.6975867, z: -0.17373037, w: 0.6727638}
+  m_LocalPosition: {x: -5.67, y: 6.6, z: -2.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 28.534, y: 92.245, z: 0.666}
 --- !u!1 &673215115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
   m_PrefabInstance: {fileID: 2141359021}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &673215116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673215115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be3cd506c8e049c42acb21b70f2d5a42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  rotationSpeed: 100
-  cameraTransform: {fileID: 274317143}
-  cameraOffset: {x: 0, y: 20, z: -10}
 --- !u!136 &673215117
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -286,6 +269,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &673215120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673215115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f1ffd6f7c7ce14e8394840c631716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  verticalSpeed: 3
+  cameraTransform: {fileID: 274317143}
+  mouseSensitivity: 2
+  cameraOffset: {x: 0, y: 5, z: -10}
+  minPitch: -30
+  maxPitch: 60
 --- !u!1 &864617157
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +498,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.67
+      value: -0.94698966
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
       propertyPath: m_LocalPosition.y
@@ -504,7 +506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.1985345
+      value: -2.864104
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
       propertyPath: m_LocalRotation.w
@@ -534,6 +536,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7825381422254068709, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.55
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
       propertyPath: m_Name
       value: Submarine
@@ -550,7 +556,7 @@ PrefabInstance:
       addedObject: {fileID: 673215117}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 673215116}
+      addedObject: {fileID: 673215120}
   m_SourcePrefab: {fileID: 100100000, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
