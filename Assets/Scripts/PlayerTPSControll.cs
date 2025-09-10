@@ -5,6 +5,7 @@ public class PlayerTPSControll : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 5f;
     public float verticalSpeed = 3f;
+    public float sprintMultiplier = 2f; // kecepatan tambahan saat sprint
 
     [Header("Camera")]
     public Transform cameraTransform;
@@ -48,10 +49,14 @@ public class PlayerTPSControll : MonoBehaviour
         Quaternion yawRot = Quaternion.Euler(0f, yaw, 0f);
         Vector3 move = (yawRot * new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"))).normalized;
 
+
+        //sprint
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? moveSpeed * sprintMultiplier : moveSpeed;
+
         // Naik / Turun
         float vMove = Input.GetKey(KeyCode.Space) ? 1f : Input.GetKey(KeyCode.LeftControl) ? -1f : 0f;
 
         // Final gerakan
-        transform.position += (move * moveSpeed + Vector3.up * vMove * verticalSpeed) * Time.deltaTime;
+        transform.position += (move * currentSpeed + Vector3.up * vMove * verticalSpeed) * Time.deltaTime;
     }
 }
