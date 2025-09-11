@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Ilumisoft.HealthSystem
 {
@@ -22,6 +23,9 @@ namespace Ilumisoft.HealthSystem
         [Tooltip("How long (in seconds) until health reaches 0")]
         [SerializeField]
         private float drainDuration = 30f;
+
+        [Header("Game Over Settings")]
+        public string gameOverScene = "GameOver";
 
         /// <summary>
         /// Gets or sets the max amount of health
@@ -80,6 +84,7 @@ namespace Ilumisoft.HealthSystem
             if (difference > 0.0f)
             {
                 OnHealthChanged?.Invoke(difference);
+               
             }
         }
 
@@ -132,6 +137,7 @@ namespace Ilumisoft.HealthSystem
                 if (CurrentHealth <= 0.0f)
                 {
                     OnHealthEmpty?.Invoke();
+                    SceneManager.LoadScene(gameOverScene);
                 }
             }
         }

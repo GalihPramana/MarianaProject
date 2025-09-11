@@ -18,10 +18,11 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        // Tekan ESC untuk nutup pop-up
+        // Tekan Q untuk nutup pop-up
         if (isPanelOpen && Input.GetKeyDown(KeyCode.Q))
         {
             HideCreatureInfo();
+            isPanelOpen = true;
         }
     }
 
