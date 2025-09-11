@@ -31,6 +31,7 @@ public class UIManager : MonoBehaviour
         nameText.text = creature.creatureName;
         descriptionText.text = creature.description;
         creatureImage.sprite = creature.image;
+        isPanelOpen = true;
     }
 
     public void HideCreatureInfo()
