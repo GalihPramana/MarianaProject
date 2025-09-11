@@ -19,15 +19,24 @@ public class Scanner : MonoBehaviour
 
     void Scan()
     {
-        // Ray keluar dari kamera, sesuai crosshair 
         Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
         if (Physics.Raycast(ray, out RaycastHit hit, scanRange, scanLayer))
         {
             HewanLaut creature = hit.collider.GetComponent<HewanLaut>();
             if (creature != null)
             {
+                Debug.Log("Scan kena: " + creature.creatureName);
                 uiManager.ShowCreatureInfo(creature);
             }
+            else
+            {
+                Debug.Log("Ray kena object, tapi bukan HewanLaut");
+            }
+        }
+        else
+        {
+            Debug.Log("Ray tidak kena apa-apa");
         }
     }
+
 }

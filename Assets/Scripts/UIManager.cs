@@ -9,9 +9,20 @@ public class UIManager : MonoBehaviour
     public Text descriptionText;
     public Image creatureImage;
 
+    private bool isPanelOpen = false;
+
     void Start()
     {
         infoPanel.SetActive(false); // hidden saat awal
+    }
+
+    void Update()
+    {
+        // Tekan ESC untuk nutup pop-up
+        if (isPanelOpen && Input.GetKeyDown(KeyCode.Q))
+        {
+            HideCreatureInfo();
+        }
     }
 
     public void ShowCreatureInfo(HewanLaut creature)
@@ -25,5 +36,6 @@ public class UIManager : MonoBehaviour
     public void HideCreatureInfo()
     {
         infoPanel.SetActive(false);
+        isPanelOpen = false;
     }
 }
