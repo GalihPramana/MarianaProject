@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +10,11 @@ public class UIManager : MonoBehaviour
     public Text nameText;
     public Text descriptionText;
     public Image creatureImage;
+
+    [Header("Progress UI")]
+    public TextMeshProUGUI scannedCountText; // UI text for scanned count
+    public int totalFishTypes = 10;          // set in Inspector (how many types exist)
+    private HashSet<string> scannedFish = new HashSet<string>(); // store unique scanned fish
 
     [Header("Sound Effects")]
     public AudioSource audioSource;
@@ -55,11 +62,26 @@ public class UIManager : MonoBehaviour
         descriptionText.text = creature.description;
         creatureImage.sprite = creature.image;
         isPanelOpen = true;
+
+        // Add fish to scanned list
+        if (!scannedFish.Contains(creature.creatureName))
+        {
+            scannedFish.Add(creature.creatureName);
+            UpdateScannedText();
+        }
     }
 
     public void HideCreatureInfo()
     {
         infoPanel.SetActive(false);
         isPanelOpen = false;
+    }
+
+    private void UpdateScannedText()
+    {
+        if (scannedCountText != null)
+        {
+            scannedCountText.text = $"{scannedFish.Count}/{totalFishTypes}";
+        }
     }
 }
