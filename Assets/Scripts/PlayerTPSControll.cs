@@ -14,6 +14,10 @@ public class PlayerTPSControll : MonoBehaviour
     public float minPitch = -30f, maxPitch = 60f;
     public float forwardOffset = -90f; // koreksi arah model
 
+    [Header("Sound Effect")]
+    public AudioSource audioSource;
+    public AudioClip dashSFX;
+
     private float yaw, pitch;
 
     void Start()
@@ -23,7 +27,7 @@ public class PlayerTPSControll : MonoBehaviour
         yaw = transform.eulerAngles.y;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         HandleCamera();
         HandleMovement();
@@ -52,11 +56,16 @@ public class PlayerTPSControll : MonoBehaviour
 
         //sprint
         float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? moveSpeed * sprintMultiplier : moveSpeed;
+        if (Input.GetKeyDown(KeyCode.LeftShift) && dashSFX != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(dashSFX);
+        }
 
         // Naik / Turun
         float vMove = Input.GetKey(KeyCode.Space) ? 1f : Input.GetKey(KeyCode.LeftControl) ? -1f : 0f;
 
         // Final gerakan
         transform.position += (move * currentSpeed + Vector3.up * vMove * verticalSpeed) * Time.deltaTime;
+
     }
 }
