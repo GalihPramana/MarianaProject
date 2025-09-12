@@ -22,7 +22,7 @@ namespace Ilumisoft.HealthSystem
 
         [Tooltip("How long (in seconds) until health reaches 0")]
         [SerializeField]
-        private float drainDuration = 30f;
+        private float drainDuration = 100f;
 
         [Header("Game Over Settings")]
         public string gameOverScene = "GameOver";

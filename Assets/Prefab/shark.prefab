@@ -88,6 +88,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     - target: {fileID: 1190224612030416500, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
       propertyPath: m_Layer
       value: 3

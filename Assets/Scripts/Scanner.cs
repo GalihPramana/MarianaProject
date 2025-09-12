@@ -4,25 +4,15 @@ using UnityEngine;
 
 public class Scanner : MonoBehaviour
 {
-    public float scanRange = 10f;
-    public Camera playerCamera;
-    public LayerMask scanLayer;            
-    public UIManager uiManager;             
+    public UIManager uiManager; // Reference to your UI Manager
 
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        // Check if the object has tag "Fish"
+        if (other.CompareTag("Fish"))
         {
-            Scan();
-        }
-    }
+            HewanLaut creature = other.GetComponent<HewanLaut>();
 
-    void Scan()
-    {
-        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
-        if (Physics.Raycast(ray, out RaycastHit hit, scanRange, scanLayer))
-        {
-            HewanLaut creature = hit.collider.GetComponent<HewanLaut>();
             if (creature != null)
             {
                 Debug.Log("Scan kena: " + creature.creatureName);
@@ -30,13 +20,8 @@ public class Scanner : MonoBehaviour
             }
             else
             {
-                Debug.Log("Ray kena object, tapi bukan HewanLaut");
+                Debug.Log("Object punya tag Fish tapi bukan HewanLaut");
             }
         }
-        else
-        {
-            Debug.Log("Ray tidak kena apa-apa");
-        }
     }
-
 }
