@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   descriptionText: {fileID: 1740876491}
   creatureImage: {fileID: 621711985}
   scannedCountText: {fileID: 387306872}
-  totalFishTypes: 8
+  totalFishTypes: 10
   audioSource: {fileID: 673215126}
   closePanelSFX: {fileID: 8300000, guid: 05769f69a4ac23b47bd51d03796316d4, type: 3}
   popUpPanelSFX: {fileID: 8300000, guid: 4a81fe2ca9aefc644b69ea0f6b9ba586, type: 3}
@@ -3928,6 +3928,7 @@ MonoBehaviour:
   - {fileID: 3295483629809222077, guid: 29f355e5287a1904e9ba10b793882976, type: 3}
   - {fileID: 8297339387502433113, guid: eba2d2fc6f4ac704e81bcc2d2db2e967, type: 3}
   - {fileID: 6654411059948093208, guid: 297136e5685f39643b1a8fe0f8b1d02b, type: 3}
+  - {fileID: 3041925348321197532, guid: 2eeacfa73c7a6254492446fbabd0d0f7, type: 3}
   spawnPoints:
   - {fileID: 188249961}
   - {fileID: 9019642}
