@@ -334,5 +334,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureName: Tuna
-  description: 
-  image: {fileID: 0}
+  description: Sprinter laut sejati. Hidup di laut terbuka sampai kedalaman 500 meter,
+    tuna bisa berenang super cepat, hingga 75 km/jam! Ukurannya bervariasi, ada yang
+    1 meter, ada juga yang bisa tumbuh sampai 4 meter dan berat 700 kg. Tuna suka
+    makan ikan kecil, cumi-cumi, dan udang kecil. Mereka juga terkenal sebagai ikan
+    pengembara, karena bisa melakukan perjalanan ribuan kilometer melintasi samudra.
+  image: {fileID: 21300000, guid: d5882deca4032b04a963ef7f31eb1616, type: 3}

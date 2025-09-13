@@ -194,5 +194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureName: Great White Shark
-  description: 
-  image: {fileID: 0}
+  description: Mereka bisa hidup dari permukaan sampai kedalaman 1.200 meter. Dengan
+    panjang tubuh bisa lebih dari 6 meter, hiu putih memakan ikan, anjing laut, dan
+    kadang lumba-lumba. Mereka bisa hidup sampai 70 tahun. Yang keren (dan agak seram),
+    hiu putih bisa mencium setetes darah di laut yang sangat luas. Hebat sekali insting
+    berburu mereka!
+  image: {fileID: 21300000, guid: 6e303d377eb9d29479972061216e8090, type: 3}

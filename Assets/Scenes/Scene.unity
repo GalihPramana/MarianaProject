@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -501,8 +501,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292487161}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.41, y: 0.41, z: 0.41}
+  m_LocalPosition: {x: 0, y: 0, z: -8.7714}
+  m_LocalScale: {x: 0.6139925, y: 0.6139925, z: 0.6139925}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 906967379}
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.89994144, a: 0.392}
+  m_Color: {r: 0, g: 1, b: 0.89994144, a: 0.79607844}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1143,7 +1143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -684, y: 185}
+  m_AnchoredPosition: {x: -652, y: 161}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &636064102
@@ -1254,7 +1254,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.601185
   m_Height: 3.7175925
@@ -1685,6 +1685,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &673215130
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673215115}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.0147467, y: 2.2333043, z: 2.009259}
+  m_Center: {x: 0.2188549, y: -0.61665213, z: -0.051558137}
 --- !u!1 &736622484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,15 +2112,15 @@ RectTransform:
   m_GameObject: {fileID: 906967378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.9555, y: 3.9555, z: 3.9555}
+  m_LocalScale: {x: 5.7458234, y: 5.7458234, z: 5.7458234}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 292487162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 385}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 330.41, y: 369}
+  m_SizeDelta: {x: 207.42, y: 18.8365}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &906967380
 CanvasRenderer:
@@ -2130,9 +2151,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 12b9c6cdbbec2d24ead6756ec4e91247, type: 3}
     m_FontSize: 14
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -3005,15 +3026,15 @@ RectTransform:
   m_GameObject: {fileID: 1740876488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.9279, y: 3.9279, z: 3.9279}
+  m_LocalScale: {x: 4.357411, y: 4.357411, z: 4.357411}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 292487162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 291.35684, y: -60.902}
-  m_SizeDelta: {x: 308.353, y: 161.318}
+  m_AnchoredPosition: {x: 324.6072, y: -73.675}
+  m_SizeDelta: {x: 274.4027, y: 147.3493}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1740876490
 CanvasRenderer:
@@ -3044,7 +3065,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 12b9c6cdbbec2d24ead6756ec4e91247, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -3691,6 +3712,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
       insertIndex: -1
       addedObject: {fileID: 673215129}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 673215130}
   m_SourcePrefab: {fileID: 100100000, guid: 453374e06817dce49bdd690d32e4d848, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

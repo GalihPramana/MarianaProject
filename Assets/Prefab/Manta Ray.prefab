@@ -266,5 +266,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureName: Manta Ray
-  description: 
-  image: {fileID: 0}
+  description: "Dengan sirip selebar bus sekolah, mereka terlihat seperti sedang
+    \u201Cterbang\u201D di bawah laut. Hidup di laut tropis dan subtropis, biasanya
+    mereka menyelam sampai 120 meter. Makanannya sederhana: plankton dan ikan kecil
+    yang disaring dari air. Pari manta bisa hidup sampai 40 tahun, dan yang paling
+    seru, mereka sering melompat keluar dari air seperti akrobat laut!"
+  image: {fileID: 21300000, guid: b606e9d604f8b0643a19870f323db159, type: 3}
