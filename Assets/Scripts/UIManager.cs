@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Progress UI")]
     public TextMeshProUGUI scannedCountText; // UI text for scanned count
-    public int totalFishTypes = 10;          // set in Inspector (how many types exist)
+    public int totalFishTypes = 8;          // set in Inspector (how many types exist)
     private HashSet<string> scannedFish = new HashSet<string>(); // store unique scanned fish
 
     [Header("Sound Effects")]
@@ -68,6 +69,12 @@ public class UIManager : MonoBehaviour
         {
             scannedFish.Add(creature.creatureName);
             UpdateScannedText();
+
+            //Check apakah semua sudah discan
+            if (scannedFish.Count >= totalFishTypes)
+            {
+                SceneManager.LoadScene("YouWon");
+            }
         }
     }
 
