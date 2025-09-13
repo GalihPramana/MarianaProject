@@ -5,12 +5,10 @@ using UnityEngine;
 public class SpawnHewan : MonoBehaviour
 {
     [Header("Spawner Settings")]
-    public GameObject[] seaCreatures;
-    public Transform player;          
-    public float spawnRadius = 30f;   
-    public float spawnHeight = 10f;  
-    public float spawnInterval = 3f;  
-    public int maxCreatures = 20;     
+    public GameObject[] seaCreatures;     // list of creature prefabs
+    public Transform[] spawnPoints;       // assign your spawn points in Inspector
+    public float spawnInterval = 3f;
+    public int maxCreatures = 20;
 
     private int currentCount = 0;
 
@@ -21,24 +19,29 @@ public class SpawnHewan : MonoBehaviour
 
     void SpawnCreature()
     {
-        if (currentCount >= maxCreatures || seaCreatures.Length == 0) return;
+        if (currentCount >= maxCreatures || seaCreatures.Length == 0 || spawnPoints.Length == 0)
+            return;
 
         // prefab random
         GameObject prefab = seaCreatures[Random.Range(0, seaCreatures.Length)];
 
-        // posisi spawn sekitar player
-        Vector3 spawnPos = player.position + new Vector3(
-            Random.Range(-spawnRadius, spawnRadius),
-            Random.Range(-spawnHeight, spawnHeight),
-            Random.Range(-spawnRadius, spawnRadius)
-        );
+        // spawn point random
+        Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
 
-        // Spawn hewan laut
-        GameObject creature = Instantiate(prefab, spawnPos, Quaternion.identity);
+        // Spawn hewan laut di titik spawn
+        GameObject creature = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
         currentCount++;
 
-        //  destroy 
+        // destroy setelah 30 detik
         Destroy(creature, 30f);
+
+        // kurangi jumlah saat object di-destroy
+        StartCoroutine(DecreaseCountAfterLifetime(30f));
+    }
+
+    IEnumerator DecreaseCountAfterLifetime(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         currentCount--;
     }
 }
