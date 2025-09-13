@@ -130,5 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureName: Hammerhead Shark
-  description: 
+  description: Hidup di perairan hangat pada kedalaman hingga 300 meter. Mereka memangsa
+    ikan, cumi, dan pari, yang menjadi makanan favoritnya. Bentuk kepala mereka yang
+    unik memberi keunggulan dalam penglihatan, hampir mencapai 360 derajat. Sayangnya,
+    beberapa spesiesnya terancam punah karena perburuan sirip.
   image: {fileID: 21300000, guid: b3eb918784b881940aec848c43e40aae, type: 3}

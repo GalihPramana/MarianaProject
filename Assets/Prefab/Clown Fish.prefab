@@ -88,7 +88,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureName: Clown Fish
-  description: 
+  description: "Hidup di terumbu karang dangkal dengan kedalaman 1\u201350 meter.
+    Mereka memakan plankton, alga, dan sisa makanan kecil di sekitar anemon laut.
+    Uniknya, clownfish kebal terhadap racun anemon, sehingga bisa tinggal aman di
+    dalamnya. Fakta menarik lainnya, clownfish bisa berganti kelamin bila betinanya
+    mati, agar kelompok tetap seimbang."
   image: {fileID: 21300000, guid: 78d79aee087b1624986d729b67ac0bdc, type: 3}
 --- !u!65 &3352275923731915484
 BoxCollider:
