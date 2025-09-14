@@ -201,6 +201,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ecaceb4031b48ac49adac708dfb05fe8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 896311612095459571}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ecaceb4031b48ac49adac708dfb05fe8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5777652449340863782}
   m_SourcePrefab: {fileID: 100100000, guid: ecaceb4031b48ac49adac708dfb05fe8, type: 3}
 --- !u!1 &8204932260469037484 stripped
 GameObject:
@@ -269,3 +272,28 @@ MonoBehaviour:
     penyu yang baru menetas langsung berlari ke laut, mengikuti cahaya bulan sebagai
     petunjuk jalan.
   image: {fileID: 21300000, guid: b0174452d7581c14dae37872b33febf1, type: 3}
+--- !u!114 &5777652449340863782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8204932260469037484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0013955d1d1a68945a0a1b64a60cf981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 3
+  reachThreshold: 0.5

@@ -205,6 +205,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d36cecbec4160c847a7be7713dba00b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1269828352836730903}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d36cecbec4160c847a7be7713dba00b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5373942555515741589}
   m_SourcePrefab: {fileID: 100100000, guid: d36cecbec4160c847a7be7713dba00b4, type: 3}
 --- !u!1 &1729738434487833022 stripped
 GameObject:
@@ -272,3 +275,28 @@ MonoBehaviour:
     yang disaring dari air. Pari manta bisa hidup sampai 40 tahun, dan yang paling
     seru, mereka sering melompat keluar dari air seperti akrobat laut!"
   image: {fileID: 21300000, guid: b606e9d604f8b0643a19870f323db159, type: 3}
+--- !u!114 &5373942555515741589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729738434487833022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0013955d1d1a68945a0a1b64a60cf981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 3
+  reachThreshold: 0.5

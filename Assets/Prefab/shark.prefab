@@ -133,6 +133,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7261167289487941786}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4838814564682534280}
   m_SourcePrefab: {fileID: 100100000, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
 --- !u!1 &6022068586322205240 stripped
 GameObject:
@@ -200,3 +203,28 @@ MonoBehaviour:
     hiu putih bisa mencium setetes darah di laut yang sangat luas. Hebat sekali insting
     berburu mereka!
   image: {fileID: 21300000, guid: 6e303d377eb9d29479972061216e8090, type: 3}
+--- !u!114 &4838814564682534280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6022068586322205240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0013955d1d1a68945a0a1b64a60cf981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 3
+  reachThreshold: 0.5

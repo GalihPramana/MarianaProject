@@ -389,6 +389,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 23cdbd9a53a782f48b2a5f56f79e1843, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3200140721909032262}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 23cdbd9a53a782f48b2a5f56f79e1843, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7758246750281836985}
   m_SourcePrefab: {fileID: 100100000, guid: 23cdbd9a53a782f48b2a5f56f79e1843, type: 3}
 --- !u!1 &5279822159837317471 stripped
 GameObject:
@@ -456,3 +459,28 @@ MonoBehaviour:
     sampai 30 cm, sedangkan jantan jauh lebih kecil dan sering menempel di tubuh
     betina! Seru ya, seperti punya \u201Cpasangan menempel\u201D selamanya."
   image: {fileID: 21300000, guid: 3ef1bf925a7fd864ab0b6840a3842b86, type: 3}
+--- !u!114 &7758246750281836985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5279822159837317471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0013955d1d1a68945a0a1b64a60cf981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 3
+  reachThreshold: 0.5
